@@ -1,0 +1,476 @@
+:root {
+    --bold: OpenSans-Bold, san-serif;
+    --regular: OpenSans-Regular, san-serif;
+    --light: OpenSans-Light, san-serif;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--light);
+}
+
+h1 {
+    font-family: var(--light);
+    color: #fff;
+    font-size: 70px;
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--regular);
+    color: rgba(91, 100, 96, 1);
+    font-size: 40px;
+}
+
+a {
+    font-family: var(--bold);
+    color: rgba(91, 100, 96, 1);
+    font-size: 16px;
+}
+
+p {
+    font-family: var(--light);
+    color: rgba(91, 100, 96, 1);
+    font-size: 16px;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: rgba(151, 151, 151, 1);
+}
+
+.btn:hover {
+    background-color: rgba(128, 142, 136, 1)
+}
+
+
+header {
+    min-height: 100px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.logo_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 70px;
+    height: 65px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
+    font-family: var(--light);
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+}
+
+.small {
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: #fff;
+}
+
+.drop {
+    width: 25px;
+    height: 25px;
+}
+
+.other {
+    display: none;
+}
+
+.drop_allement:hover>.other {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+.intro {
+    width: 100%;
+    height: 745px;
+    background: url(../img/Intro.png) center no-repeat;
+    background-size: cover;
+    background-position-y: -25px;
+    -webkit-background-size: cover;
+    display: flex;
+    padding: 100px 50px 0 50px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.intro_txt>p {
+    max-width: 333px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.button_with_price {
+    margin-top: 25px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+}
+
+.large {
+    width: 260px;
+    height: 100px;
+    color: #fff;
+    border: none;
+}
+
+.price {
+    width: 120px;
+    height: 100px;
+    background: url(../img/price.png) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section {
+    margin-top: 100px;
+    height: aut;
+    width: 100%;
+}
+
+.first_section {
+    background: url(../img/the-bed-features-luxurious-supima-linen-and-woolen-blankets-as-well-as-hand-knit-pillows-from-a-local-artist\ 1.png) right no-repeat;
+}
+
+.first_txt {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+
+}
+
+.first_txt>p,
+.first_txt>h2,
+.first_txt>a {
+    width: 465px;
+    backdrop-filter: opacity(1);
+}
+
+.img_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 55px;
+}
+
+.img_section>* {
+    max-width: 432px;
+    min-width: 320px;
+    height: auto;
+}
+
+.video_box {
+    height: 387px;
+    min-height: auto;
+    background: url(../img/DJI_0762\ 1.png) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+#nav_bar {
+    padding-top: 80%;
+}
+
+.location {
+    height: 650px;
+    width: 100%;
+    background: url(../img/Screen\ Shot\ 2021-02-26\ at\ 16.18\ 1.png) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position-x: -200px;
+    overflow-x: hidden;
+}
+
+.sup_location {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sup_txt {
+    background-color: rgba(233, 236, 224, 1);
+    padding-left: 100px;
+    width: 50%;
+    justify-content: center;
+    text-align: left;
+}
+
+.blur_locc {
+    width: 50%;
+    background: url(../img/We\ are\ here.png) center no-repeat;
+    background-position-x: 28%;
+
+    background-color: rgba(0, 0, 0, .6);
+    height: 650px;
+}
+
+.facilities {
+    height: 970px;
+    background-color: rgba(91, 100, 96, 1);
+    align-items: center;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: center;
+}
+
+.facilities>h3 {
+    color: #fff;
+}
+
+.semi_box {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+    align-items: center;
+    justify-content: center;
+
+    vertical-align: middle;
+}
+
+.img_txt>p {
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    margin-left: -17px;
+}
+
+.more_about {
+    height: 560px;
+    width: 100%;
+    background: url(../img/unique-panorama-glass-lodge-iceland8\ 1.png) right no-repeat, url(../img/the-cabins-overlook-the-hekla-volcano-one-of-icelands-most-active-volcanoes-it-is-part-of-a-25-mile-long-volcanic-ridge-and-during-the-middle-ages-it-was-referred-to-by-europeans-as-the-gateway-to-hell\ 1.png) left no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.more_about>button {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    border: none;
+
+    color: #333;
+}
+
+.more_about>button:hover {
+    background-color: rgba(91, 100, 96, 1);
+    color: #fff;
+    text-decoration: underline;
+}
+
+.lastt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.right_site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.right_site>img {
+    width: 380px;
+}
+
+.right_site>.button_with_price {
+    margin: 0;
+    padding: 0%;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.left_site {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer {
+    margin-top: 50px;
+    min-height: 470px;
+    width: 100%;
+    background-color: rgba(91, 100, 96, 1);
+}
+
+footer>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.right_foot {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.right_foot>p {
+    max-width: 418px;
+}
+
+.right_foot>*,
+.first_block>*,
+.second_block>* {
+    color: #fff;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(91, 100, 96, 1);
+    font-size: 16px;
+    color: #fff;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+.left_foot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.first_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_block>a {
+    font-family: var(--light);
+}
+
+.second_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    justify-content: right;
+}
+
+@media screen and (max-width:1200px) {
+
+    .first_section {
+        background: url(../img/the-bed-features-luxurious-supima-linen-and-woolen-blankets-as-well-as-hand-knit-pillows-from-a-local-artist\ 1.png) center no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+
+    .first_txt {
+        background: rgba(0, 0, 0, .5);
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .first_txt>p,
+    .first_txt>h2,
+    .first_txt>a {
+        max-width: 465px;
+        color: #fff;
+    }
+
+}
